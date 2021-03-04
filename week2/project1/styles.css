@@ -1,0 +1,62 @@
+/*
+You must include the following:
+
+X At least 1 CSS class
+X At least 1 CSS id
+X Style at least 1 child element by first selecting its parent element in CSS
+X Only CSS styling (no HTML inline styling)
+
+-----------------------------------------
+
+X Make the main headline dark green.
+X Use the font family "Georgia" for the main headline and the sub-headline.
+X Center the text of the main headline and the sub-headline.
+X Give the paragraphs a line height of 25 pixels.
+X Remove the underline from the links. (Hint: Google “How to remove the underline from link (anchor) tags”)
+X Make the "You might also like" label all uppercase.
+X Make an underline appear when you hover over a link.
+X Challenge #1: Make the image 'float' to the left of the body content.
+X Challenge #2: Add some spacing around the image so the text is not 'pressed against it'.
+*/
+
+#headline {
+    color:darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.bodyPars {
+    line-height: 25px;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+li:first-child{
+    font-style: italic;
+}
+
+#outro {
+    text-transform: uppercase;
+}
