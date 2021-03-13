@@ -1,0 +1,35 @@
+body {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgb(244, 244, 244);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav * {
+    color: #dcfff9;
+}
+
+nav a {
+    font-size: 20px;
+    margin: 30px;
+    width: 100px;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7f7f7f;
+}
