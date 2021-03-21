@@ -47,7 +47,7 @@ DIVs:
         background-color: #8DC63F;
         height: 125px;
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 3fr 1fr;
         
     }
 }
