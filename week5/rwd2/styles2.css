@@ -1,0 +1,108 @@
+/*Mobile*/
+@media only screen and (max-width: 420px){
+    #cntnr{
+        display: grid;
+        grid-auto-rows: minmax(125px, auto);
+        grid-template-columns: 1fr;
+        gap: 1em;
+        color: white;
+        font-size: 22px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    #cntnr .box{
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .box1{
+        background-color:gray;
+    }
+    .box2{
+        background-color:rgb(73, 73, 73);
+    }
+    .box3{
+        background-color:rgb(73, 73, 73);
+    }
+    .box4{
+        background-color:lightgray;
+    }
+    .box5{
+        background-color:gray;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 420px) and (max-width: 1024px){
+    #cntnr{
+        display: grid;  
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(75px, auto);
+        gap: 1em;
+        color: white;
+        font-size: 22px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    #cntnr .box{
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .box1{
+        background-color:gray;
+        grid-column: 1 / 5;
+    }
+    .box2{
+        background-color:rgb(73, 73, 73);
+        grid-column: 1 / 2;
+    }
+    .box3{
+        background-color:rgb(73, 73, 73);
+        grid-column: 2 / 5;
+    }
+    .box4{
+        background-color:lightgray;
+        grid-column: 1 / 5;
+    }
+    .box5{  
+        background-color:gray;
+        grid-column: 1 / 5;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px){
+    #cntnr{
+        display: grid;  
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(75px, auto);
+        gap: 1em;
+        color: white;
+        font-size: 22px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    #cntnr .box{
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .box1{
+        background-color:gray;
+        grid-column: 1 / 5;
+    }
+    .box2{
+        background-color:rgb(73, 73, 73);
+        grid-column: 1 / 2;
+    }
+    .box3{
+        background-color:rgb(73, 73, 73);
+        grid-column: 2 / 4;
+    }
+    .box4{
+        background-color:lightgray;
+        grid-column: 4 / 5;
+    }
+    .box5{  
+        background-color:gray;
+        grid-column: 1 / 5;
+    }
+}
