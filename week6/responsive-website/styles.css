@@ -1,0 +1,43 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    background-color: black;
+}
+
+.box1:hover {
+    background-color: cadetblue;
+    opacity: 15%;
+    border-bottom:4px dashed rebeccapurple;
+}
+
+.box2:hover {
+    background-color: darkgoldenrod;
+    box-shadow: 10px 5px 5px maroon;
+    border-radius: 5px;
+    
+}
+
+.box3:hover {
+    background-color: darkseagreen;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+.box4:hover {
+    background-color: darkslategray;
+    transform: translate3d(42px, -62px, -135px);
+    border: 7px solid olive;
+}
+
+.box5:hover {
+    background-color: indianred;
+    transform: skewY(20deg);
+    width: 250px;
+}
+
+.box6:hover {
+    background-color: indigo;
+    height: 500px;
+    padding: 100px;
+}
