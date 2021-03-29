@@ -19,10 +19,6 @@ body {
         visibility: hidden;
     }
 
-    #mobile {
-        position: fixed;
-    }
-
     #menuToggle{
         display: block;
         position: relative;
