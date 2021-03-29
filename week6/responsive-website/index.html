@@ -25,8 +25,7 @@ Note: Don’t forget proper spacing (box model)
     </head>
     <body>
         <header>
-            <div class="parallax"></div>
-            <nav role="navigation">
+            <nav role="navigation" id="mobile">
                 <div id="menuToggle">
                 <input type="checkbox">
                 <div></div>
@@ -40,6 +39,13 @@ Note: Don’t forget proper spacing (box model)
                 </ul>
                 </div>
             </nav>
+            <nav id="tabDesk">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Info</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="parallax"></div>
         </header>
 
         <main>
@@ -47,8 +53,7 @@ Note: Don’t forget proper spacing (box model)
                 <div class="box header">
                     <h1>Jurassic Park:</h1><br>
                     <h2>The Lost World Survival Camp</h2>
-                    
-                    <img src="http://placehold.jp/500x420.jpg" height="" width="" alt="placeholder">
+                    <!--<img src="http://placehold.jp/500x420.jpg" height="" width="" alt="placeholder">-->
                 </div>
                 
                 <div class="box box2">
@@ -98,7 +103,10 @@ Note: Don’t forget proper spacing (box model)
             <footer>
                 <section>
                     <div class="box footer">
-                        <h1>See Me</h1>
+                        <h3 class="ftrP title">Thanks for stopping by!</h3>
+                        <p class="ftrP">Join us for your next adventure.</p>
+                        <p class="ftrP">Park Number: <a href="#" role="cell">749.818.9488</a></p>
+                        <p class="ftrP">Jurassic Park: The Lost World Survival Camp&#174;</p>
                     </div>
                 </section>
             </footer>
