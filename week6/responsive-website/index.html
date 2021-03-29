@@ -1,21 +1,107 @@
+<!--
+Your website must include:
+
+X •A navbar (this will be a single page website so functional links are not needed), header, footer, and a main section.
+X •The main section must include at minimum:  image(s), text, list(s), and table(s). Feel free to add other elements as you see fit. Remember: coding is about practicing code!
+X •At least 3 media queries (mobile, tablet, and desktop). Remember to use the mobile-first approach when styling this website.
+
+You must use:
+
+X •CSS grid for the layout, and at least one example of CSS flexbox for aligning elements
+X •A google font (you will need to go to fonts.google.com (Links to an external site.) and get the url for a <link /> on their HTML page)
+X •CSS style sheet (no inline styling)
+
+Note: Don’t forget proper spacing (box model)
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSS Pseudo Selectors & Transitions</title>
+        <title>Responsive Website</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Train+One&display=swap" rel="stylesheet">
     </head>
-    <header>
-        <audio controls autoplay>
-            <source src="Assets/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        </audio>
-    </header>
     <body>
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box box5"></div>
-        <div class="box box6"></div>
+        <header>
+            <div class="parallax"></div>
+            <nav role="navigation">
+                <div id="menuToggle">
+                <input type="checkbox">
+                <div></div>
+                <div></div>
+                <div></div>
+                <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="cntnr">
+                <div class="box header">
+                    <h1>Jurassic Park:</h1><br>
+                    <h2>The Lost World Survival Camp</h2>
+                    
+                    <img src="http://placehold.jp/500x420.jpg" height="" width="" alt="placeholder">
+                </div>
+                
+                <div class="box box2">
+                    <p>Now eventually you do plan to have dinosaurs on your dinosaur tour? You bred raptors? Check the vending machines. Dinosaurs eat man; woman inherits the earth. Ian, freeze! I bring scientists, you bring a rockstar. Yeah, but your scientists were so preoccupied with whether or not they could that they didn't stop to think if they should. Look at all the blood. T-Rex doesn't want to be fed. It's a Unix system, I know this! I hate this hacker crap!</p>
+                    <p>You bred raptors? When you gotta go, you gotta go. Are these characters...auto...erotica? Remind me to thank John for the wonderful weekend. I can't get Jurassic Park back online without Dennis Nedry. Well, at least you're out of the tree. Don't get cheap on me, Dodgson.</p>
+                </div>
+
+                <div class="box box3">
+                    <img src="Assets/772FAB35-5C60-47BD-AF64576CF62E910E_source.jpg" alt="Two dinosaurs rearing up for a fight.">
+                </div>
+
+                <div class="box box4">
+                    <ul id="overflowNo">
+                        <h3 class="title">REVIEWS</h3>
+                        <li>"The survival camp was amazing!!!! You have to go ASAP! 5/5 bones"</li> <li>&#9760; Jason L. </li><br>
+                        <li>"Never heard of this place before. Silly Me! Have to bring the fam on the next trip. 4/5 bones"</li> <li>&#9760; Melissa A.</li><br>
+                        <li>"Almost died...absolutely loved it! 5/5 bones"</li> <li>&#9760; Jake A.</li>
+                    </ul>
+                </div>
+
+                <div class="box box5">
+                    <table>
+                        <tr>
+                            <th>Fright Night Package</th>
+                            <th>Explorer Package</th>
+                            <th>Survivalist Package</th>
+                        </tr>
+                        <tr>
+                            <td class="needSpace">4 park visits a year. (Quarterly)</td>
+                            <td class="needSpace">12 park visits a year.</td>
+                            <td class="needSpace">Unlimited park visits all year.</td>
+                        </tr>
+                        <tr>
+                            <td class="needSpace">A free ticket for any dino-flavored funnel cake. </td>
+                            <td class="needSpace">Receive 2 drink tickets and 2 Jurassic Park&#174; Survival Camp tees.</td>
+                            <td class="needSpace">Receive 20 tokens per visit, 4 drink tickets, 4 family-fun dinners, and 4 tees. Redeemable at any vendor inside the park.</td>
+                        </tr>
+                        <tr>
+                            <td class="colorDrop">$59.99</td>
+                            <td class="colorDrop">$95.99</td>
+                            <td class="colorDrop">125.99</td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+
+            <footer>
+                <section>
+                    <div class="box footer">
+                        <h1>See Me</h1>
+                    </div>
+                </section>
+            </footer>
+        </div>
     </body>
 </html>
