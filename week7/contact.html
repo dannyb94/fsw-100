@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Business Time</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <header class="header">
+
+        <div id="wrapper">
+            <div id="nav" class="nav">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="a-once">Home</a>
+                <a href="blog.html" class="a-once">Blog</a>
+                <a href="gallery.html" class="a-once">Gallery</a>
+            </div>
+
+            <a href="#" id="mobile-nav" onclick="openNav()">
+                <div id="first"></div>
+                <div id="second"></div>
+                <div id="third"></div>
+            </a>
+        </div>
+    </header>
+    <body>
+        <div id="contact-img"></div>
+
+        <div id="cntnr2">
+            <div class="bump bump1">
+                <img src="Assets/pexels-ololade-moshood-olawale-4889531.jpg" width="100px" alt="woman posing with eyes shut">
+            </div>
+            <div class="bump bump2">
+                <img src="Assets/pexels-karolina-grabowska-4040592.jpg" width="100px" alt="rose quartz close up" id="rose">
+            </div>
+        </div>
+        <br>
+        <div id="cntnr-contact">
+            <div class="contact contact1">Hit me up with any question or inquiries into <em>the wood</em>. Follow me on across social media where exclusive content is posted for my fellow kids of <em>the wood</em>.</div>
+            <div class="contact contact2">
+                <form><label for="name">Name: <input name="visitor" id="visitor" placeholder="Enter your name here." required></label></form><br>
+                <form><label for="email">E-mail: <input name="email" id="email" placeholder="Enter your e-mail here." required></label></form><br>
+                <form><label for="subject">Subject: <input name="subject" id="subject" placeholder="E-mail subject line." required></label></form><br>
+                <form><label for="message">Message: <textarea rows="2" cols="18" id="message" name="message" placeholder="Message here."></textarea></label></form>
+            </div>
+            <div class="contact contact3">
+                <button id="contact-btn">SEND EMAIL</button>
+            </div>
+        </div>
+        <script src="doit.js"></script>
+    </body>
+    <footer id="footer">
+        <section>
+            <p>&#169;Danielle Ussery // 21'</p>
+        </section>
+    </footer>
+</html>
