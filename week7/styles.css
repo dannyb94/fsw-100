@@ -209,7 +209,7 @@ font-family: 'Roboto', sans-serif;
         margin: 2px 0 0 0;
     }
 
-    .blogo:link {
+    .blogo {
         text-decoration: none;
         color: lightsalmon;
     }
@@ -353,9 +353,9 @@ font-family: 'Roboto', sans-serif;
 
 }
 
-/*-----------------------------Tab/Desk------------------------------*/
+/*-----------------------------Tablet------------------------------*/
 
-@media only screen and (min-width: 420px) and (max-width:770px){
+@media only screen and (min-width: 420px) and (max-width:800px){
     #mobile-nav {
         width: 0;
         display: block;
@@ -553,7 +553,7 @@ font-family: 'Roboto', sans-serif;
         margin: 2px 0 0 0;
     }
 
-    .blogo:link {
+    .blogo {
         text-decoration: none;
         color: lightsalmon;
     }
@@ -628,6 +628,7 @@ font-family: 'Roboto', sans-serif;
     #blog-shape {
         margin: 0;
         padding: 0;
+        position: relative;
     }
     /*---------gallery pg--------*/
     .row {
@@ -743,5 +744,409 @@ font-family: 'Roboto', sans-serif;
         color: slategrey;
         font-size: 18px;
         padding-top: 12px;
+    }
+}
+
+/*-----------------------------Desktop------------------------------*/
+@media only screen and (min-width: 800px){
+    #mobile-nav {
+        width: 0;
+        display: block;
+        margin: 1em 0 1em 1em;
+    }
+
+    #mobile-nav  div{
+        height: 4px;
+        background-color: black;
+        margin: 5px 0;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+
+    #first {
+        width: 30px;
+    }
+
+    #second {
+        width: 20px;
+    }
+
+    #third {
+        width: 25px;
+    }
+
+    #mobile-nav:hover div{
+        width: 30px;
+    }
+
+    .nav {
+        font-family: 'Roboto', sans-serif;
+        width: 0;
+        overflow-x: hidden;
+        height: 100vh;
+        z-index: 1;
+        position: fixed;
+        background-color: rgba(227, 227, 227, 0.6);
+        transition: 0.5s;
+        display: block;
+    }
+
+    .nav a {
+        clear: left;
+        color: black;
+        font-size: 18px;
+        display: block;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .a-once {
+        padding: 1em;
+    }
+
+    .close {
+        float: left;
+        margin: 1em 0 0 1em;
+        font-size: 40px;
+    }
+
+    .nav a:not(:first-child):hover{
+        background-color: #f7941d;
+    }
+    /*---------home pg--------*/
+    .the-top {
+        position: absolute;
+        top: 10%;
+        transform: translate( -50%, -50% );
+        color: white;
+        opacity: 0.4;
+        font-size: 80px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .the {
+        position: absolute;
+        top: 150px;
+        left: 72%;
+        transform: rotate(-90deg);
+    }
+
+    .w {
+        position: absolute;
+        top: 410px;
+        left: 75.8%;
+    }
+
+    .o {
+        position: absolute;
+        top: 530px;
+        left: 75.8%;
+    }
+
+    .o2 {
+        position: absolute;
+        top: 650px;
+        left: 75.8%;
+    }
+
+    .d {
+        position: absolute;
+        top: 770px;
+        left: 75.8%;
+    }
+
+    .parallax {
+        visibility: hidden;
+    }
+
+    #cntnr{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(125px, auto);
+        gap: 1em;
+    }
+
+    .box1{
+        grid-column: 1 / 3;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1 img {
+        width: 1400px;
+    }
+
+    .box1 #h1 {
+        position: absolute;
+        color: white;
+        left: 300px;
+        top: 300px;
+        font-size: 50px;
+        
+    }
+
+    .box1 #h1-2 {
+        position: absolute;
+        color: transparent;
+        -webkit-text-stroke: 2px white;
+        left: 680px;
+        top: 600px;
+        font-size: 50px;
+        text-shadow: 2px 5px 5px rgba(88, 75, 86, 0.5);
+    }
+
+    .box1 #h1-3 {
+        position: absolute;
+        color: white;
+        left: 300px;
+        top: 750px;
+        font-family: 'Condiment', cursive;
+        font-size: 50px;
+    }
+
+    .box2{
+        grid-column: 4 / 5;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box2 img {
+        margin-top: 200px;
+        width: 300px;
+    }
+
+    .box3 {
+        grid-column: 1 / 5;
+        margin: 0px 35px;
+        text-align: center;
+        font-size: 25px;
+    }
+    /*---------blog pg--------*/
+    .container {
+        width: 750px;
+        overflow: auto;
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: 7px 5px 5px lightgray;
+        margin: 40px 10px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container img {
+        margin-right: 15px;
+        float: left;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    
+    .container h4,
+    .container p{
+        margin-left: 15px;
+        display: block;
+        margin: 2px 0 0 0;
+    }
+
+    .blogo {
+        text-decoration: none;
+        color: lightsalmon;
+    }
+
+    .blogo:hover{
+        color: steelblue;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    .info {
+        font-size: 26px;
+    }
+    
+    .dates {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #cntnr2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(125px, auto);
+        gap: 1em;
+    }
+
+    .bump1 {
+        grid-column: 1 / 3;
+    }
+
+    .bump1 img{
+        width: 300px;
+    }
+
+    .bump2 {
+        grid-column: 3 / 5;
+    }
+
+    .bump2 img{
+        transform: rotate(-90deg);
+        width: 240px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 110px;
+        margin-left: 60px;
+    }
+
+    #open-img {
+        background-image: url("Assets/pexels-breston-kenya-2880094.jpg");
+        min-height: 850px;
+        background-attachment: inherit;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+    #blog-shape p{
+        transform: rotate(90deg);
+        font-family: 'Condiment', cursive;
+        font-size: 45px;
+        margin: 150px;
+        padding: 0;
+        border: 0;
+        color: white;
+    }
+
+    #blog-shape {
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+    /*---------gallery pg--------*/
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+      
+    .column {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+      
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    /*---------contact pg--------*/
+    #cntnr2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(125px, auto);
+        gap: 1em;
+    }
+
+    .bump1 {
+        grid-column: 1 / 4;
+    }
+    
+    .bump1 img{
+        width: 900px;
+    }
+    
+    .bump2 {
+        grid-column: 4 / 5;
+    }
+    
+    .bump2 img{
+        transform: rotate(-90deg);
+        width: 440px;
+    }
+    
+    #cntnr-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(125px, auto);
+        gap: 1em;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .contact1 {
+        grid-column: 1 / 2;
+        margin-left: auto;
+        padding-right: 30px;
+        width: 150px;
+    }
+    
+    .contact2 {
+        grid-column: 2 / 3;
+    }
+    
+    .contact2 label {
+        font-weight: 700;
+        font-size: 17px;
+    }
+    
+    .contact2 input,
+    .contact2 textarea {
+        font-size: 15px;
+    }
+    
+    .contact2 #message {
+        height: 100px;
+    }
+    
+    textarea {
+        width: 600px;
+        position: fixed;
+    }
+    
+    .contact3 {
+        grid-column: 2 / 3;
+    }
+    
+    #contact-btn {
+        border-radius: 5px;
+        background-color: #FCE3E3;
+        color: rgba(88, 75, 86, 0.384);
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 55px 0px;
+    }
+    
+    #contact-btn:hover {
+        background-color: rgba(88, 75, 86, 0.384);
+        color: #FCE3E3;
+    }
+    /*---------footer--------*/
+    #footer {
+        background-color: whitesmoke;
+        height: 65px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    section p {
+        color: slategrey;
+        font-size: 20px;
+        padding-top: 20px;
     }
 }
